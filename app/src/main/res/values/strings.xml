@@ -3,5 +3,16 @@
     <string name="title_activity_select">SelectActivity</string>
     <string name="title_scenes">Scenes</string>
     <string name="title_screens">Screens</string>
-    <string name="title_effects">Effects</string>
+    <string name="title_time_reset">Time Resets</string>
+    <string name="title_shader">Shader</string>
+
+    <string name="button_local_screen">Local Screen</string>
+    <string name="button_global_screen">Global Screen</string>
+    <string name="button_random_screen">Random Screen</string>
+
+    <string name="button_randomized_time">Randomized Time</string>
+    <string name="button_synchronized_time">Synchronized Time</string>
+
+    <string name="button_manual_mode">Manual Mode</string>
+    <string name="button_preset_mode">Preset Mode</string>
 </resources>

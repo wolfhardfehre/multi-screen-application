@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_scenes"
+        android:icon="@drawable/ic_scenes"
+        android:title="@string/title_scenes"/>
 
     <item
-            android:id="@+id/navigation_scenes"
-            android:icon="@drawable/ic_home_black_24dp"
-            android:title="@string/title_scenes"/>
+        android:id="@+id/navigation_screens"
+        android:icon="@drawable/ic_screens"
+        android:title="@string/title_screens"/>
 
     <item
-            android:id="@+id/navigation_screens"
-            android:icon="@drawable/ic_dashboard_black_24dp"
-            android:title="@string/title_screens"/>
+        android:id="@+id/navigation_time_reset"
+        android:icon="@drawable/ic_times"
+        android:title="@string/title_time_reset"/>
 
     <item
-            android:id="@+id/navigation_effects"
-            android:icon="@drawable/ic_notifications_black_24dp"
-            android:title="@string/title_effects"/>
-
+        android:id="@+id/navigation_shader"
+        android:icon="@drawable/ic_shader"
+        android:title="@string/title_shader"/>
 </menu>

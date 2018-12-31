@@ -1,13 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             tools:context=".views.SceneFragment">
 
-    <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="scene"/>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-</FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin"
+        tools:context=".views.SceneFragment">
+
+        <TextView style="@style/Button"
+            android:id="@+id/buttonLocalScreen"
+            android:text="@string/button_local_screen"
+            android:layout_width="match_parent" />
+
+        <TextView style="@style/Button"
+            android:id="@+id/buttonGlobalScreen"
+            android:text="@string/button_global_screen"
+            android:layout_width="match_parent" />
+
+        <TextView style="@style/Button"
+            android:id="@+id/buttonRandomScreen"
+            android:text="@string/button_random_screen"
+            android:layout_width="match_parent" />
+
+        <include layout="@layout/divider"/>
+
+        <TextView style="@style/Button"
+            android:id="@+id/buttonRandomizedTime"
+            android:text="@string/button_randomized_time"
+            android:layout_width="match_parent" />
+
+        <TextView style="@style/Button"
+            android:id="@+id/buttonSynchronizedTime"
+            android:text="@string/button_synchronized_time"
+            android:layout_width="match_parent" />
+
+        <include layout="@layout/divider"/>
+
+        <TextView style="@style/Button"
+            android:id="@+id/buttonManualMode"
+            android:text="@string/button_manual_mode"
+            android:layout_width="match_parent" />
+
+        <TextView style="@style/Button"
+            android:id="@+id/buttonPresetMode"
+            android:text="@string/button_preset_mode"
+            android:layout_width="match_parent"/>
+    </LinearLayout>
+</ScrollView>

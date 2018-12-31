@@ -5,10 +5,14 @@ import android.support.design.widget.BottomNavigationView
 import android.support.v4.app.Fragment
 import android.support.v7.app.ActionBar
 import android.support.v7.app.AppCompatActivity
-import fontaine.nice.multiscreencontroller.views.EffectFragment
+import fontaine.nice.multiscreencontroller.views.TimeResetFragment
 import fontaine.nice.multiscreencontroller.views.SceneFragment
 import fontaine.nice.multiscreencontroller.views.ScreenFragment
+import fontaine.nice.multiscreencontroller.views.ShaderFragment
 import kotlinx.android.synthetic.main.activity_select.*
+import fontaine.nice.multiscreencontroller.views.BottomNavigationBehavior
+import android.support.design.widget.CoordinatorLayout
+import android.view.View
 
 
 class SelectActivity : AppCompatActivity() {
@@ -29,9 +33,15 @@ class SelectActivity : AppCompatActivity() {
                 loadFragment(fragment)
                 return@OnNavigationItemSelectedListener true
             }
-            R.id.navigation_effects -> {
-                toolbar!!.setTitle(R.string.title_effects)
-                fragment = EffectFragment()
+            R.id.navigation_time_reset -> {
+                toolbar!!.setTitle(R.string.title_time_reset)
+                fragment = TimeResetFragment()
+                loadFragment(fragment)
+                return@OnNavigationItemSelectedListener true
+            }
+            R.id.navigation_shader -> {
+                toolbar!!.setTitle(R.string.title_shader)
+                fragment = ShaderFragment()
                 loadFragment(fragment)
                 return@OnNavigationItemSelectedListener true
             }
@@ -42,7 +52,10 @@ class SelectActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_select)
+        val navigation = findViewById<View>(R.id.navigation) as BottomNavigationView
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
+        val layoutParams = navigation.layoutParams as CoordinatorLayout.LayoutParams
+        layoutParams.behavior = BottomNavigationBehavior()
         toolbar = supportActionBar
         toolbar!!.setTitle(R.string.title_scenes)
         loadFragment(SceneFragment())

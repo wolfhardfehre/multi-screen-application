@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#f1f5f7"
-    tools:context="views.ScreenFragment" >
+    tools:context=".views.ShaderFragment" >
 
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"

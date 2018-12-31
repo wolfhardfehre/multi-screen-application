@@ -4,9 +4,11 @@
     <color name="colorPrimaryDark">#000000</color>
     <color name="colorPrimaryLight">#484848</color>
 
-    <color name="colorAccent">#d50000</color>
-    <color name="colorAccentLight">#ff5131</color>
-    <color name="colorAccentDark">#9b0000</color>
+    <color name="colorAccent">#537c8e</color>
+    <color name="colorAccentLight">#a2c0cc</color>
+
     <color name="primaryTextColor">#ffffff</color>
-    <color name="secondaryTextColor">#ffffff</color>
+
+    <color name="dividerColor">#D3D3D3</color>
+    <color name="buttonText">@color/colorPrimary</color>
 </resources>
