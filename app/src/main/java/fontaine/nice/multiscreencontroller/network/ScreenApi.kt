@@ -20,13 +20,13 @@ interface ScreenApi {
 
     @GET("/toggle_screen")
     fun toggleScreen(@Query("on") on: Int,
-                     @Query("shader") screen: Int): Observable<String>
+                     @Query("screen") screen: Int): Observable<String>
 
     @GET("/change_shader")
     fun changeShader(@Query("shader") shader: Int): Observable<String>
 
     @GET("/reset_time")
-    fun resetTime(@Query("shader") screen: Int): Observable<String>
+    fun resetTime(@Query("screen") screen: Int): Observable<String>
 
     @GET("/reset_times")
     fun resetTimes(@Query("synced") synced: Int): Observable<String>
